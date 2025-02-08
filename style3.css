@@ -1,4 +1,4 @@
-.Container{  
+.Container{
     display: flex;
     flex-direction: row;
 }
@@ -17,4 +17,57 @@
     height: 100px;
     display: block;
     margin: 0 auto 10px;
+}
+
+
+.navbar{
+    display:flex;
+    background-color: #333;
+    padding:10px;
+    flex-direction: row;
+}
+
+.navbar-item a{
+    color:white; 
+    text-decoration: none; 
+    font-size: 15px;
+    padding: 10px 15px; 
+    display: block;
+}
+
+.navbar-item {
+    position:relative;
+}
+
+.navbar-item a:hover{
+    background-color: #bdbbbb;
+    border-radius: 5px;
+}
+
+
+.dropdownmenu {
+    display: none;
+    position: absolute;
+    top: 100%;;
+    background-color: white;
+    min-width: 200px;
+    border-radius: 5px;
+}
+
+.dropdownmenu a{
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.dropdownmenu .dropdown-selection:hover{
+    background-color:white; 
+}
+
+.dropdownmenu .dropdown-selection{
+    border-bottom: 1px solid lightgrey;
+}
+
+.navbar-item:hover .dropdownmenu{
+    display: block;
 }
